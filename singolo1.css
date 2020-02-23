@@ -1,6 +1,5 @@
 /******* General ********/
 
-
 @font-face {
     font-family: Lato-Bold;
     src: url("assets/fonts/Lato-Bold.ttf")
@@ -21,14 +20,12 @@
     src: url("assets/fonts/Lato-Regular.ttf")
 }
 
-
 html, body {
     margin: 0;
     padding: 0;
 }
 
 /******** Header ********/
-
 
 header {
     background-color: #2d303a;
@@ -43,11 +40,6 @@ header {
 
 .header__content div {
     display: inline-block;
-}
-
-
-.header__content .right {
-    float: right;
 }
 
 .nav-bar {
@@ -88,7 +80,6 @@ a.nav-bar__button:hover {
     color: #494e62;
 }
 
-
 .nav-bar__button:nth-last-child(1)::after {
     content: none;
 }
@@ -128,7 +119,6 @@ a.nav-bar__button:hover {
 }
 
 /******** Slider ********/
-
 
 .slider {
     height: 594px;
@@ -212,9 +202,7 @@ a.nav-bar__button:hover {
     transform: scale(1, -1) rotate(180deg);
 }
 
-
 /******** Footer *******/
-
 
 .services {
     display: flex;
