@@ -1,0 +1,248 @@
+/******** GENERAL ********/
+
+@font-face {
+	font-family: Lato-Bold;
+	src: url("assets/fonts/Lato-Bold.ttf")
+}
+
+@font-face {
+	font-family: Lato-Black;
+	src: url("assets/fonts/Lato-Black.ttf")
+}
+
+@font-face {
+	font-family: Lato-Light;
+	src: url("assets/fonts/Lato-Light.ttf")
+}
+
+@font-face {
+	font-family: Lato-Regular;
+	src: url("assets/fonts/Lato-Regular.ttf")
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.8rem;
+	font-family: 'Lato', Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 1020px;
+	margin: 0 auto;
+	height: inherit;
+}
+
+.content {
+	width: calc(1020px - 40px - 40px);
+	margin: 0 auto;
+}
+
+.text {
+	color: #767e9e;
+	font-family: 'Lato-Light';
+	font-size: 1.8rem;
+	line-height: 30px;
+}
+
+/******** Portfolio ********/
+
+.portfolio {
+	height: 864px;
+	background-color: #2d303a;
+	border-bottom: 6px solid #323746;
+}
+
+.potfolio__header {
+	padding-top: 70px;
+}
+
+.portfolio__title {
+	display: block;
+	color: #666d89;
+	font-family: 'Lato-Black';
+	font-size: 3rem;
+	line-height: 17.86px;
+	letter-spacing: 0.27px;
+}
+
+.portfolio__text {
+	display: block;
+	color: #767e9e;
+	font-family: 'Lato-Light';
+	font-size: 1.8rem;
+	line-height: 30px;
+	letter-spacing: -0.22px;
+	padding-top: 28px;
+}
+
+/* filters/buttons */
+
+.portfolio_buttons {
+	margin-left: 1px;
+	padding-top: 9px;
+}
+
+.portfolio_buttons a {
+	margin-right: 3px;
+	margin-left: 4px;
+	padding: 2px 5px;
+	font-family: 'Lato-Regular';
+	font-size: 1.2rem;
+	color: #666d89;
+	line-height: 21.56px;
+	text-decoration: none;
+	border: 1px solid #666d89;
+	border-radius: 4px;
+
+}
+
+.portfolio_buttons a:nth-child(1) {
+	margin-left: 0px;
+	margin-right: 1px;
+	padding: 2px 7px;
+	color: #c5c5c5;
+	border: 1px solid #c5c5c5;
+}
+
+.portfolio_buttons a:hover {
+	cursor: pointer;
+}
+
+.portfolio_buttons a:nth-last-child(1) {
+	margin-left: 0px;
+	padding: 3px 6px;
+}
+
+
+.portfolio__arts {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.art {
+	margin: 10px 0;
+	width: 220px;
+	height: 187px;
+}
+
+.art:nth-child(n+13) {
+	display: none;
+}
+
+
+/******** About us ********/
+
+.about-us {
+	height: 728px;
+	border-bottom: 6px solid #ffffff;
+	background-color: #f2f2f2;
+}
+
+.about-us__header {
+	padding-top: 69px;
+}
+
+.about-us__title {
+	display: block;
+	font-family: 'Lato-Black';
+	font-size: 3rem;
+	color: #666d89;
+	line-height: 17.86px;
+	letter-spacing: 0.04px;
+}
+
+.about-us__text {
+	padding-top: 27px;
+	letter-spacing: -0.05px;
+}
+
+.about-us__contacts {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 45px;
+}
+
+.contact {
+		width: 300px;
+}
+
+.contact__info {
+	margin-top: 12px;
+}
+
+.contact__name {
+	font-family: 'Lato-Black';
+	font-size: 1.8rem;
+	color: #666d89;
+	width: 300px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.about-us__contacts .contact:nth-child(2) .contact__name {
+	letter-spacing: -0.22px;
+}
+
+.contact__text {
+	margin-top: 9px;
+	font-family: Lato-Regular;
+	font-size: 1.2rem;
+	color: #767e9e;
+	line-height: 21.56px;
+}
+
+.about-us__contacts .contact:nth-child(1) .contact__text {
+	letter-spacing: -0.15px;
+}
+
+.about-us__contacts .contact:nth-child(2) .contact__text {
+	letter-spacing: 0.1px;
+}
+
+.about-us__contacts .contact:nth-child(3) .contact__text {
+	letter-spacing: 0.03px;
+}
+
+.contact__socials {
+	margin-top: 23px;
+}
+
+.contact__socials a {
+	margin-left: 1px;
+	margin-right: 2px;
+	filter: invert(44%) sepia(11%) saturate(1018%) hue-rotate(191deg) brightness(93%) contrast(83%);
+}
+
+.contact__socials a:nth-child(1) {
+	margin-left: 0px;
+}
+
+.contact__socials a:nth-child(1):hover {
+	filter: invert(33%) sepia(29%) saturate(1175%) hue-rotate(183deg) brightness(90%) contrast(88%);
+}
+
+.contact__socials a:nth-child(2):hover {
+	filter: invert(40%) sepia(100%) saturate(3039%) hue-rotate(342deg) brightness(93%) contrast(86%);
+}
+
+.contact__socials a:nth-child(3):hover {
+	filter: invert(41%) sepia(97%) saturate(1232%) hue-rotate(181deg) brightness(105%) contrast(90%);
+}
+
+.contact__socials a:nth-child(4):hover {
+	filter: invert(43%) sepia(31%) saturate(1228%) hue-rotate(155deg) brightness(84%) contrast(99%);
+}
